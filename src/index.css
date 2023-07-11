@@ -50,3 +50,8 @@ table {
 * {
   outline:1px white solid;
 }
+
+img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
