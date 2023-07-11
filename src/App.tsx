@@ -177,7 +177,7 @@ function App() {
         <div className='flex flex-col justify-center m-auto items-center px-6 py-6 w-full sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]'>
           <img src={Team2} className='w-max sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] rounded-xl' alt='Team'></img>
         </div>
-        <footer className='flex flex-row justify-around p-6 w-[100vw] bg-[#0F0F0F]'>
+        <footer className='flex flex-row justify-around p-6 w-full bg-[#0F0F0F]'>
           <a href='https://www.instagram.com/totetapio/' target='_blank' rel='noreferrer'>
             <BsInstagram/>
           </a>
