@@ -11,10 +11,18 @@ function App() {
         <img src={Team1} className='w-max sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] rounded-xl mt-5' alt='Team'></img>
       </div>
       <div className='bg-white text-black flex-col justify-center items-center text-center mt-10 p-6 w-full'>
-        <div className='flex flex-col m-auto w-[80vw] sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] items-center justify-center text-center divide-black divide-y divide-solid'>
-          <h3 className='p-4 w-[80vw] text-2xl text-[#780116]'>Tulevat ottelut</h3>
-          <p className='p-4 w-[80vw]'>Tote vs Tapi</p>
-          <p className='p-4 w-[80vw]'>Tote vs Hjk</p>
+      <h3 className='p-4 w-[80vw] text-2xl text-[#780116]'>Tulevat ottelut</h3>
+        <div className='flex flex-row m-auto w-[80vw] sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] items-center justify-center text-center'>
+          <div className='flex flex-col justify-left items-left text-left w-1/2 divide-black divide-y divide-solid'>
+            <p className='p-4 w-[80vw]'>HIFK/3 vs Tote/Tapio</p>
+            <p className='p-4 w-[80vw]'>Tote/Tapio vs HepU</p>
+            <p className='p-4 w-[80vw]'>HJK/Kantsu vs ToTe/Tapio</p>
+          </div>
+          <div className='text-gray-700 flex flex-col justify-left items-left text-right w-1/2'>
+            <p className='p-4'>Ti 1.8. 20:15</p>
+            <p className='p-4'>Puolustaja</p>
+            <p className='p-4'>Puolustaja</p>
+          </div>
         </div>
       </div>
       <div className='flex-col justify-center items-center text-center mt-10 w-full divide-white divide-y divide-solid'>
