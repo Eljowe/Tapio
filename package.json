@@ -7,13 +7,16 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "vite serve dist --port 8080"
   },
   "dependencies": {
     "axios": "^1.4.0",
+    "express": "^4.18.2",
     "framer-motion": "^10.12.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
     "react-pages": "^0.7.5",
     "react-router-dom": "^6.14.1",
     "vite-plugin-react-pages": "^4.1.3"
