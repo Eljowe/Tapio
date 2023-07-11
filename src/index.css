@@ -28,7 +28,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-  background-color: #85182A;
+  /*background-color: #85182A;*/
+  background-color: #780116;
 	line-height: 1;
 }
 ol, ul {
@@ -46,12 +47,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/*
 * {
   outline:1px white solid;
 }
-
+*/
 img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  display: unset;
 }
