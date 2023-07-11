@@ -5,9 +5,6 @@ import { BsInstagram, BsTiktok } from 'react-icons/bs'
 import { BiCopyright } from 'react-icons/bi'
 
 import {
-  headContainerAnimation,
-  headContentAnimation,
-  headTextAnimation,
   slideAnimation
 } from './config/motion'
 
