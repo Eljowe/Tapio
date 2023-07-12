@@ -37,7 +37,7 @@ function App() {
     <motion.section className='home' {...slideAnimation('up')}>
       <div className='text-white w-full flex flex-col justify-center items-center'>
         <section id="koti" className='w-full h-[100vh] flex flex-col items-center p-6'>
-          <h3 className='tracking-[3.75vw] text-xs mt-[18vh] sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 sm:tracking-[5vw] md:tracking-[5vw] lg:tracking-[5vw] xl:tracking-[5vw] 2xl:tracking-[5vw]'>TOUKOLAN TERÄS</h3>
+          <h3 className='tracking-[3.75vw] text-xs mt-[12vh] sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 sm:tracking-[5vw] md:tracking-[5vw] lg:tracking-[5vw] xl:tracking-[5vw] 2xl:tracking-[5vw]'>TOUKOLAN TERÄS</h3>
           <h1 className='text-5xl sm:text-7xl md:text-8xl tracking-[2vw] mt-10 sm:mt-10 md:mt-10 lg:mt-10 xl:mt-10 2xl:mt-10 px-0'>TOTE/TAPIO</h1>
           <img className="w-max h-[10vh] mt-5" src="https://www.toukolanteras.fi/wp-content/themes/wp-toukolan/images/logo.png" alt='logo'></img>
           <img src={Team1} className='w-max sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] rounded-xl mt-10' alt='Team'></img>
@@ -50,7 +50,7 @@ function App() {
           <div className='flex flex-col m-auto w-[80vw] sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] items-center justify-center text-center divide-black divide-y divide-solid'>
             <a href="https://tulospalvelu.palloliitto.fi/match/2825150/lineups" target='_blank'>
               <div className='flex flex-row justify-between m-auto items-center text-left px-4 py-6 w-[80vw] sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]'>
-                <p>HIFK/3 vs ToTe/Tapio</p>
+                <p>HIFK/3</p>
                 <div className='flex flex-row justify-center items-center'>
                   <p className='pr-2 text-right'>Ti 1.8. 20:15</p>
                   <BsArrowRight/>
@@ -59,7 +59,7 @@ function App() {
             </a>
             <a href="https://tulospalvelu.palloliitto.fi/match/2825154/lineups" target='_blank'>
               <div className='flex flex-row justify-between m-auto items-center text-left px-4 py-6 w-[80vw] sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]'>
-                <p>ToTe/Tapio vs HePu</p>
+                <p>HePu</p>
                 <div className='flex flex-row justify-center items-center'>
                   <p className='pr-2 text-right'>Ti 8.8. 20:20</p>
                   <BsArrowRight/>
@@ -68,7 +68,7 @@ function App() {
             </a>
             <a href="https://tulospalvelu.palloliitto.fi/match/2825160/lineups" target='_blank'>
               <div className='flex flex-row justify-between m-auto items-center text-left px-4 py-6 w-[80vw] sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]'>
-                <p>HJK/Kantsu vs ToTe/Tapio</p>
+                <p>HJK/Kantsu</p>
                 <div className='flex flex-row justify-center items-center'>
                   <p className='pr-2 text-right'>Ke 16.8. 18:15</p>
                   <BsArrowRight/>
@@ -77,7 +77,7 @@ function App() {
             </a>
             <a href="https://tulospalvelu.palloliitto.fi/match/2825163/lineups" target='_blank'>
               <div className='flex flex-row justify-between m-auto text-left px-4 py-6 w-[80vw] sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]'>
-                <p>ToTe/Tapio vs PPJ/LeJa</p>
+                <p>PPJ/LeJa</p>
                 <div className='flex flex-row justify-center items-center'>
                   <p className='pr-2 text-right'>Ti 22.8. 20:15</p>
                   <BsArrowRight/>
@@ -86,7 +86,7 @@ function App() {
             </a>
             <a href="https://tulospalvelu.palloliitto.fi/match/2825170/lineups" target='_blank'>
               <div className='flex flex-row justify-between m-auto items-center text-left px-4 py-6 w-[80vw] sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]'>
-                <p>FC POHU/KY United vs ToTe/Tapio</p>
+                <p>FC POHU/KY United</p>
                 <div className='flex flex-row justify-center items-center'>
                   <p className='pr-2 text-right'>Ti 29.8. 20:20</p>
                   <BsArrowRight/>
@@ -95,7 +95,7 @@ function App() {
             </a>
             <a href="https://tulospalvelu.palloliitto.fi/match/2825170/lineups" target='_blank'>
               <div className='flex flex-row justify-between m-auto items-center text-left px-4 py-6 w-[80vw] sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]'>
-                <p>PPV/Seos vs ToTe/Tapio</p>
+                <p>PPV/Seos</p>
                 <div className='flex flex-row justify-center items-center'>
                   <p className='pr-2 text-right'>Ti 5.9. 19:15</p>
                   <BsArrowRight/>
@@ -104,7 +104,7 @@ function App() {
             </a>
             <a href="https://tulospalvelu.palloliitto.fi/match/2825175/lineups" target='_blank'>
               <div className='flex flex-row justify-between m-auto items-center text-left px-4 py-6 w-[80vw] sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]'>
-                <p>ToTe/Tapio vs FC Spital</p>
+                <p>FC Spital</p>
                 <div className='flex flex-row justify-center items-center'>
                   <p className='pr-2 text-right'>Ti 12.9. 20:20</p>
                   <BsArrowRight/>
@@ -113,7 +113,7 @@ function App() {
             </a>
             <a href="https://tulospalvelu.palloliitto.fi/match/2825181/lineups" target='_blank'>
               <div className='flex flex-row justify-between m-auto items-center text-left px-4 py-6 w-[80vw] sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]'>
-                <p>ToTe/Tapio vs Tavastia</p>
+                <p>Tavastia</p>
                 <div className='flex flex-row justify-center items-center'>
                   <p className='pr-2 text-right'>Ke 20.9. 20:15</p>
                   <BsArrowRight/>
@@ -122,7 +122,7 @@ function App() {
             </a>
             <a href="https://tulospalvelu.palloliitto.fi/match/2825190/lineups" target='_blank'>
               <div className='flex flex-row justify-between m-auto items-center text-left px-4 py-6 w-[80vw] sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]'>
-                <p>SAPA/Savanna vs ToTe/Tapio</p>
+                <p>SAPA/Savanna</p>
                 <div className='flex flex-row justify-center items-center'>
                   <p className='pr-2 text-right'>Pe 29.9. 18:00</p>
                   <BsArrowRight/>
@@ -226,8 +226,8 @@ function App() {
               </div>
             </div>
           </section>
-          <footer className='flex flex-col justify-center py-16 w-full'>
-            <div className='flex flex-row justify-center py-8 w-full'>
+          <footer className='flex flex-col justify-center py-12 w-full bg-black'>
+            <div className='flex flex-row justify-center pb-4 w-full'>
               <a className='px-4' href='https://www.instagram.com/totetapio/' target='_blank' rel='noreferrer'>
                 <BsInstagram/>
               </a>
@@ -240,7 +240,7 @@ function App() {
             </div>
             <div className='flex flex-row justify-center items-center'>
               <BiCopyright/>
-              <p className='px-1'>ToTe/Tapio 2023</p>
+              <p className='px-1 tracking-[0.1rem]'>ToTe/Tapio 2023</p>
             </div>
           </footer>
         </div>
