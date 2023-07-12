@@ -1,5 +1,5 @@
 import Team1 from './assets/Team1.jpg'
-import { BsInstagram, BsTiktok, BsArrowRight, BsArrowDown } from 'react-icons/bs'
+import { BsInstagram, BsTiktok, BsArrowRight } from 'react-icons/bs'
 import { BiCopyright } from 'react-icons/bi'
 import {
   slideAnimation
