@@ -5,21 +5,9 @@ import {
   slideAnimation
 } from './config/motion'
 import {motion, AnimatePresence} from 'framer-motion';
-import { SyntheticEvent } from 'react'
+
 
 function App() {
-  function smoothScrollTo(event: SyntheticEvent, targetId: string) {
-    event.preventDefault();
-  
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-  }
-
 
   return (
     <AnimatePresence>
@@ -30,9 +18,6 @@ function App() {
           <h1 className='text-5xl sm:text-7xl md:text-8xl tracking-[2vw] mt-10 sm:mt-10 md:mt-10 lg:mt-10 xl:mt-10 2xl:mt-10 px-0'>TOTE/TAPIO</h1>
           <img className="w-max h-[10vh] mt-5" src="https://www.toukolanteras.fi/wp-content/themes/wp-toukolan/images/logo.png" alt='logo'></img>
           <img src={Team1} className='w-max sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] rounded-xl mt-10' alt='Team'></img>
-          <a href="#ottelut" onClick={(e: SyntheticEvent) => smoothScrollTo(e, 'ottelut')}>
-            <BsArrowDown className="mt-16 sm:mt-10 md:mt-10 lg:mt-10 xl:mt-10 2xl:mt-10 text-4xl"/>
-          </a>
         </section>
         <section id="ottelut" className='bg-[#ffffff] text-black flex-col justify-center items-center text-center mt-0 p-6 w-full'>
           <h3 className='p-4 m-auto w-[80vw] text-2xl text-black tracking-[0.3rem]'>Tulevat ottelut</h3>
