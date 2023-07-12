@@ -1,7 +1,7 @@
 import axios from "axios";
 
 function getMatches() {
-    axios.get("https://spl.torneopal.net/taso/rest/getMatches?team_id=35119831&tpid=-260141292")
+    axios.get("https://spl.torneopal.fi/taso/rest/getClub?R9SWE9Q6UE")
     .then((response) => console.log(response))
 
 }

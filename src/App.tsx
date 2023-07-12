@@ -1,25 +1,13 @@
 import Team1 from './assets/Team1.jpg'
-import Team2 from './assets/Team2.jpg'
-
 import { BsInstagram, BsTiktok, BsArrowRight, BsArrowDown } from 'react-icons/bs'
 import { BiCopyright } from 'react-icons/bi'
-
 import {
   slideAnimation
 } from './config/motion'
-
 import {motion, AnimatePresence} from 'framer-motion';
 import { SyntheticEvent } from 'react'
 
-
-
 function App() {
-  /*
-  useEffect(() => {
-    getMatches()
-  }, [])
-  */
-
   function smoothScrollTo(event: SyntheticEvent, targetId: string) {
     event.preventDefault();
   
@@ -31,6 +19,7 @@ function App() {
       });
     }
   }
+
 
   return (
     <AnimatePresence>
@@ -250,10 +239,5 @@ function App() {
   )
 }
 
-/*
-<div className='flex flex-col justify-center m-auto items-center px-6 py-6 w-full sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]'>
-            <img src={Team2} className='w-max sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] rounded-xl' alt='Team'></img>
-          </div>
-*/
 
 export default App
