@@ -1,10 +1,9 @@
-# fly.toml file generated for totetapio on 2023-07-11T19:04:10+03:00
+# fly.toml file generated for ytotetapio on 2023-07-11T20:47:18+03:00
 
-app = "totetapio"
+app = "ytotetapio"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
-
 
 [env]
 
