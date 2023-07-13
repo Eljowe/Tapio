@@ -16,7 +16,7 @@ function App() {
           <h3 className='tracking-[3.75vw] text-xs mt-0 sm:mt-0 sm:tracking-[5vw] '>TOUKOLAN TERÄS</h3>
           <h1 className='text-5xl sm:text-7xl md:text-8xl tracking-[2vw] mt-[25vh] sm:mt-[33vh] px-0'>TOTE/TAPIO</h1>
           <img className="w-max h-[10vh] mt-5" src="https://www.toukolanteras.fi/wp-content/themes/wp-toukolan/images/logo.png" alt='logo'></img>
-          <div className='flex flex-col sm:flex-row justify-center items-center mt-10 sm:mt-[20vh]'>
+          <div className='flex flex-col sm:flex-row justify-center items-center mt-10 sm:mt-[20vh] md:mt-[15vh]'>
             <Link
               to="ottelut"
               smooth={true}
