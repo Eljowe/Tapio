@@ -1,6 +1,4 @@
-import Team1 from './assets/Team1.jpg'
 import { BsInstagram, BsTiktok, BsArrowRight } from 'react-icons/bs'
-import { BiCopyright } from 'react-icons/bi'
 import {
   slideAnimation
 } from './config/motion'
@@ -12,7 +10,7 @@ function App() {
   /*<img src={Team1} className='w-max sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] rounded-xl mt-10' alt='Team'></img>*/
   return (
     <AnimatePresence>
-    <motion.section className='home' {...slideAnimation('up')}>
+    <motion.section className='home' {...slideAnimation('left')}>
       <div className='text-white w-full flex flex-col justify-center items-center'>
         <section id="koti" className='w-full h-[100vh] flex flex-col items-center p-6'>
           <h3 className='tracking-[3.75vw] text-xs mt-0 sm:mt-0 sm:tracking-[5vw] '>TOUKOLAN TERÄS</h3>

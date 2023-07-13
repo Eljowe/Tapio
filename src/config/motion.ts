@@ -1,4 +1,4 @@
-export const transition = { type: "spring", duration: 2 };
+export const transition = { type: "linear", duration: 1 };
 
 export const slideAnimation = (direction: string) => {
   return {
