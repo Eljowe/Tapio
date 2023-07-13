@@ -41,7 +41,7 @@ function App() {
               duration={500}
               className="m-2 p-4 w-[80vw] sm:w-[25vw] text-center outline outline-white outline-1 rounded-2xl cursor-pointer"
             >
-              <p className='tracking-[0.2vw]'>Tilastot</p>
+              <p className='tracking-[0.2vw]'>Sarjataulukko</p>
             </Link>
           </div>
           <div className='flex flex-row justify-center pb-4 mt-10 w-full'>
