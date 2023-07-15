@@ -21,7 +21,7 @@ function App() {
               to="ottelut"
               smooth={true}
               duration={500}
-              className="m-2 p-4 w-[80vw] sm:w-[25vw] text-center outline outline-white outline-1 rounded-2xl cursor-pointer"
+              className="m-2 p-4 w-[80vw] sm:w-[25vw] text-center outline outline-white outline-1 rounded-md cursor-pointer"
             >
               <p className='tracking-[0.2vw]'>Ottelut</p>
             </Link>
@@ -29,7 +29,7 @@ function App() {
               to="joukkue"
               smooth={true}
               duration={500}
-              className="m-2 p-4 w-[80vw] sm:w-[25vw] text-center outline outline-white outline-1 rounded-2xl cursor-pointer"
+              className="m-2 p-4 w-[80vw] sm:w-[25vw] text-center outline outline-white outline-1 rounded-md cursor-pointer"
             >
               <p className='tracking-[0.2vw]'>Joukkue</p>
             </Link>
@@ -37,7 +37,7 @@ function App() {
               to="table"
               smooth={true}
               duration={500}
-              className="m-2 p-4 w-[80vw] sm:w-[25vw] text-center outline outline-white outline-1 rounded-2xl cursor-pointer"
+              className="m-2 p-4 w-[80vw] sm:w-[25vw] text-center outline outline-white outline-1 rounded-md cursor-pointer"
             >
               <p className='tracking-[0.2vw]'>Sarjataulukko</p>
             </Link>
