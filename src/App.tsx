@@ -238,7 +238,6 @@ function App() {
         </div>
         </motion.section>
       </AnimatePresence>
-      
   )
 }
 
