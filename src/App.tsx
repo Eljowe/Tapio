@@ -55,7 +55,7 @@ function App() {
             </div>
         </section>
         <section id="ottelut" className='bg-[#ffffff] text-black flex-col justify-center items-center text-center mt-0 p-6 w-full'>
-          <h3 className='p-4 m-auto w-[80vw] text-2xl text-black tracking-[0.3rem]'>Tulevat ottelut</h3>
+          <h3 className='p-4 m-auto w-[80vw] text-2xl text-black tracking-[0.3rem]'>Syyskauden ottelut</h3>
           <div className='flex flex-col m-auto w-[80vw] sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] items-center justify-center text-center divide-black divide-y divide-solid'>
             <a href="https://tulospalvelu.palloliitto.fi/match/2825150/lineups" target='_blank'>
               <div className='flex flex-row justify-between m-auto items-center text-left px-4 py-6 w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]'>
