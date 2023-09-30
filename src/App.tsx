@@ -15,15 +15,15 @@ function App() {
         <section id="koti" className='w-full h-[100vh] flex flex-col items-center p-6'>
           <h3 className='tracking-[3.75vw] text-xs mt-0 sm:mt-0 sm:tracking-[5vw] '>TOUKOLAN TERÄS</h3>
           <h1 className='text-5xl sm:text-7xl md:text-8xl tracking-[2vw] mt-[25vh] sm:mt-[33vh] px-0'>TOTE/TAPIO</h1>
-          <img className="w-max h-[10vh] mt-5" src="https://www.toukolanteras.fi/wp-content/themes/wp-toukolan/images/logo.png" alt='logo'></img>
-          <div className='flex flex-col sm:flex-row justify-center items-center mt-10 sm:mt-[20vh] md:mt-[15vh]'>
+          <img className="w-max h-[10vh] mt-5 sm:mt-20" src="https://www.toukolanteras.fi/wp-content/themes/wp-toukolan/images/logo.png" alt='logo'></img>
+          <div className='flex flex-col sm:flex-row justify-center items-center mt-10 sm:mt-[10vh]'>
             <Link
               to="ottelut"
               smooth={true}
               duration={500}
               className="m-2 p-4 w-[80vw] sm:w-[25vw] text-center outline outline-white outline-1 rounded-md cursor-pointer"
             >
-              <p className='tracking-[0.2vw]'>Ottelut</p>
+              <p className='tracking-[0.2vw]'>OTTELUT</p>
             </Link>
             <Link
               to="joukkue"
@@ -31,7 +31,7 @@ function App() {
               duration={500}
               className="m-2 p-4 w-[80vw] sm:w-[25vw] text-center outline outline-white outline-1 rounded-md cursor-pointer"
             >
-              <p className='tracking-[0.2vw]'>Joukkue</p>
+              <p className='tracking-[0.2vw]'>JOUKKUE</p>
             </Link>
             <Link
               to="table"
@@ -39,7 +39,7 @@ function App() {
               duration={500}
               className="m-2 p-4 w-[80vw] sm:w-[25vw] text-center outline outline-white outline-1 rounded-md cursor-pointer"
             >
-              <p className='tracking-[0.2vw]'>Sarjataulukko</p>
+              <p className='tracking-[0.2vw]'>SARJATAULUKKO</p>
             </Link>
           </div>
           <div className='flex flex-row justify-center pb-4 mt-10 w-full'>
