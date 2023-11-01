@@ -9,23 +9,23 @@ function App() {
     <AnimatePresence>
       <motion.section className="home" {...slideAnimation('left')}>
         <div className="flex w-full flex-col items-center justify-center text-white">
-          <section id="koti" className="flex h-[100dvh] w-full flex-col items-center">
-            <h3 className="mt-[10vh] text-xs tracking-[4vw] sm:mt-2 sm:tracking-[5vw]">TOUKOLAN TERÄS</h3>
-            <div className="mt-2 flex w-full flex-col items-center justify-center bg-black p-14 shadow-xl  grayscale-0 sm:h-[800px] sm:max-h-[74vh]">
+          <section id="koti" className="flex w-full flex-col items-center">
+            <div className="flex w-full flex-col items-center justify-center bg-black p-14 shadow-xl  grayscale-0 sm:h-[800px] sm:max-h-[74vh]">
+              <h3 className="absolute top-0 my-2 text-xs tracking-[4vw] sm:tracking-[5vw]">TOUKOLAN TERÄS</h3>
               <div className="z-1 absolute inset-0 w-full bg-[url('./assets/Team1.jpg')] bg-cover bg-no-repeat opacity-60 grayscale"></div>
-              <h1 className="z-10 px-0 text-5xl text-[#ffffff] sm:text-7xl md:text-8xl">TOTE/TAPIO</h1>
+              <h1 className="z-10 px-0 text-5xl text-[#ffffff] sm:text-7xl md:text-8xl lg:text-9xl">TOTE/TAPIO</h1>
               <img
                 className="z-10 mt-6 h-[10vh] w-max sm:mt-10"
                 src="https://www.toukolanteras.fi/wp-content/themes/wp-toukolan/images/logo.png"
                 alt="logo"
               ></img>
             </div>
-            <div className="mt-10 flex flex-col items-center justify-center sm:mt-6 sm:flex-row">
+            <div className="divide flex w-full flex-row items-center justify-center bg-[#000] text-[0.6em] sm:text-base">
               <Link
                 to="ottelut"
                 smooth={true}
                 duration={500}
-                className="m-2 w-[80vw] cursor-pointer p-4 text-center outline outline-2 outline-white transition duration-500 hover:scale-105 sm:w-[25vw]"
+                className=" w-1/3 cursor-pointer p-4 text-center transition duration-500 hover:z-20 hover:scale-105 hover:bg-[#111111] hover:underline"
               >
                 <p className="tracking-[0.2vw]">OTTELUT</p>
               </Link>
@@ -33,7 +33,7 @@ function App() {
                 to="joukkue"
                 smooth={true}
                 duration={500}
-                className="m-2 w-[80vw] cursor-pointer p-4 text-center outline outline-2 outline-white transition duration-500 hover:scale-105 sm:w-[25vw]"
+                className=" w-1/3 cursor-pointer p-4 text-center transition duration-500 hover:scale-105 hover:bg-[#111111] hover:underline"
               >
                 <p className="tracking-[0.2vw]">JOUKKUE</p>
               </Link>
@@ -41,32 +41,17 @@ function App() {
                 to="table"
                 smooth={true}
                 duration={500}
-                className="m-2 w-[80vw] cursor-pointer p-4 text-center outline outline-2 outline-white transition duration-500 hover:scale-105 sm:w-[25vw]"
+                className=" w-1/3 cursor-pointer p-4 text-center transition duration-500 hover:scale-105 hover:bg-[#111111] hover:underline"
               >
                 <p className="tracking-[0.2vw]">SARJATAULUKKO</p>
               </Link>
             </div>
-            <div className="mt-10 flex w-full flex-row justify-center pb-4">
-              <a className="px-4" href="https://www.instagram.com/totetapio/" target="_blank" rel="noreferrer">
-                <BsInstagram />
-              </a>
-              <a className="px-4" href="https://www.tiktok.com/@totetapio" target="_blank" rel="noreferrer">
-                <BsTiktok />
-              </a>
-              <a href="https://www.toukolanteras.fi/" target="_blank" rel="noreferrer">
-                <img
-                  className="h-[20px] w-max px-4"
-                  src="https://www.toukolanteras.fi/wp-content/themes/wp-toukolan/images/logo.png"
-                  alt="footer logo"
-                ></img>
-              </a>
-            </div>
           </section>
           <section
             id="ottelut"
-            className="mt-0 w-full flex-col items-center justify-center bg-[#ffffff] p-6 text-center text-black"
+            className="mt-0 w-full flex-col items-center justify-center bg-white p-6 text-center text-black"
           >
-            <h3 className="m-auto w-[80vw] p-4 text-2xl tracking-[0.3rem] text-black">Syyskauden ottelut</h3>
+            <h3 className="m-auto w-[80vw] p-4 text-2xl tracking-[0.3rem]">Syyskauden ottelut</h3>
             <div className="m-auto flex w-[80vw] flex-col items-center justify-center divide-y divide-solid divide-black text-center sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
               <a href="https://tulospalvelu.palloliitto.fi/match/2825150/lineups" target="_blank">
                 <div className="m-auto flex w-[80vw] flex-row items-center justify-between px-4 py-6 text-left lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
@@ -153,7 +138,7 @@ function App() {
           </section>
           <section
             id="joukkue"
-            className="m-auto mt-10 flex w-full flex-col items-center justify-center divide-y divide-solid divide-white lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]"
+            className="flex w-full flex-col items-center justify-center divide-y divide-solid divide-white bg-[#780116]"
           >
             <h3 className=" margin-auto my-10 text-2xl tracking-[0.3rem]">Joukkue</h3>
             <div className="m-auto flex w-[80vw] flex-col items-center justify-center pb-6 lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
@@ -249,6 +234,36 @@ function App() {
               </div>
             </div>
           </section>
+          <div className="flex w-full flex-row items-center justify-center space-x-6 bg-[#780116] p-4 shadow-xl ">
+            <a
+              className=" transition duration-500 hover:scale-125"
+              href="https://www.instagram.com/totetapio/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsInstagram />
+            </a>
+            <a
+              className=" transition duration-500 hover:scale-125"
+              href="https://www.tiktok.com/@totetapio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsTiktok />
+            </a>
+            <a
+              href="https://www.toukolanteras.fi/"
+              target="_blank"
+              rel="noreferrer"
+              className="transition duration-500 hover:scale-125"
+            >
+              <img
+                className="h-[20px] w-max "
+                src="https://www.toukolanteras.fi/wp-content/themes/wp-toukolan/images/logo.png"
+                alt="footer logo"
+              ></img>
+            </a>
+          </div>
         </div>
       </motion.section>
     </AnimatePresence>
