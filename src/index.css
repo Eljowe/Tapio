@@ -2,148 +2,168 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'dots';
+  src:
+    local('dots'),
+    url(./assets/dots.ttf) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+							  'embedded-opentype', and 'svg' */
+}
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
   /*background-color: #85182A;*/
   background-color: #780116;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	line-height: 1;
+  font-family: 'IBM Plex Serif', serif;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /*
 * {
   outline:1px white solid;
 }
 */
-::-webkit-scrollbar-track
-{
-	background-color: #1D1D1D;
+::-webkit-scrollbar-track {
+  background-color: #1d1d1d;
 }
 
- ::-webkit-scrollbar
-{
-	width: 12px;
-    height: 12px;
-	background-color: rgb(19, 19, 19);
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(19, 19, 19);
 }
 
- ::-webkit-scrollbar-thumb
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
-	background-color: rgb(65, 65, 65);
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  background-color: rgb(65, 65, 65);
 }
 
 img {
   display: unset;
 }
 
+h1 {
+  font-family: 'dots';
+}
+
 .scheduletable {
-	color: white;
-	width:90vw;
-	max-width: 400px; 
-	font-size: 0.7rem;
+  color: white;
+  width: 90vw;
+  max-width: 400px;
+  font-size: 0.7rem;
 }
 
 .torneopal_widget {
-	width:90vw;
-	max-width: 400px; 
+  width: 90vw;
+  max-width: 400px;
 }
 
-.torneopal_widget .scoretable {  
-	width:90vw;
-	max-width: 400px;  
-	font-family:Ubuntu,Arial;
-	border:1px solid rgb(0, 0, 0);
-  }
-  .torneopal_widget .scoretable th{
-	text-align:center;
-	background:rgb(124, 8, 8);
-	color:#fff;
-	padding:4px 2px;
-  }
-  .torneopal_widget .scoretable th.team,
-  .torneopal_widget .scoretable td.team
-  {
-	text-align:left;
-  }
-  
-  .torneopal_widget .scoretable td{
-	text-align:center;
-	background:#d8bbbb;
-	padding:4px 0px;
-  }
-  .torneopal_widget .scoretable tr:nth-child(even) td{
-	background:#eee;
-  }
-  .torneopal_widget #updated{
-	display:none;
-  }
+.torneopal_widget .scoretable {
+  width: 90vw;
+  max-width: 400px;
+  font-family: Ubuntu, Arial;
+  border: 1px solid rgb(0, 0, 0);
+}
+.torneopal_widget .scoretable th {
+  text-align: center;
+  background: rgb(124, 8, 8);
+  color: #fff;
+  padding: 4px 2px;
+}
+.torneopal_widget .scoretable th.team,
+.torneopal_widget .scoretable td.team {
+  text-align: left;
+}
+
+.torneopal_widget .scoretable td {
+  text-align: center;
+  background: #d8bbbb;
+  padding: 4px 0px;
+}
+.torneopal_widget .scoretable tr:nth-child(even) td {
+  background: #eee;
+}
+.torneopal_widget #updated {
+  display: none;
+}
 
 #table {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-items: center;
-	margin: 2rem 0;
-	padding: 1rem;
-	font-size: 0.8rem
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  font-size: 0.8rem;
 }
 
 caption {
-	margin-top: 3rem;
-	color: white;
-	padding: 1rem;
-	font-family: 'Playfair Display', serif;
-	font-size: larger;
+  margin-top: 3rem;
+  color: white;
+  padding: 1rem;
+  font-family: 'Playfair Display', serif;
+  font-size: larger;
 }
 
 .nextmatch {
-	margin-top: 2rem;
-	color: white;
+  margin-top: 2rem;
+  color: white;
 }
 .team_players {
-	margin: 3rem 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	color: white;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
 .suspensions {
-	color: white;
+  color: white;
 }
 
 .torneopal_widget #text {
-	color: white;
+  color: white;
 }
 
 .team_players * {
-	padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 #table h1 {
-	color: white;
-	margin-top: 5rem;
-	font-family: 'Playfair Display', serif;
-	font-size: larger;
+  color: white;
+  margin-top: 5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: larger;
 }
-
