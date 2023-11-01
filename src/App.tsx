@@ -25,7 +25,7 @@ function App() {
                 to="ottelut"
                 smooth={true}
                 duration={500}
-                className="outline-3 m-2 w-[80vw] cursor-pointer p-4 text-center outline outline-white transition duration-500 hover:scale-105 sm:w-[25vw]"
+                className="m-2 w-[80vw] cursor-pointer p-4 text-center outline outline-2 outline-white transition duration-500 hover:scale-105 sm:w-[25vw]"
               >
                 <p className="tracking-[0.2vw]">OTTELUT</p>
               </Link>
@@ -33,7 +33,7 @@ function App() {
                 to="joukkue"
                 smooth={true}
                 duration={500}
-                className="outline-3 m-2 w-[80vw] cursor-pointer p-4 text-center outline outline-white transition duration-500 hover:scale-105 sm:w-[25vw]"
+                className="m-2 w-[80vw] cursor-pointer p-4 text-center outline outline-2 outline-white transition duration-500 hover:scale-105 sm:w-[25vw]"
               >
                 <p className="tracking-[0.2vw]">JOUKKUE</p>
               </Link>
@@ -41,7 +41,7 @@ function App() {
                 to="table"
                 smooth={true}
                 duration={500}
-                className="outline-3 m-2 w-[80vw] cursor-pointer p-4 text-center outline outline-white transition duration-500 hover:scale-105 sm:w-[25vw]"
+                className="m-2 w-[80vw] cursor-pointer p-4 text-center outline outline-2 outline-white transition duration-500 hover:scale-105 sm:w-[25vw]"
               >
                 <p className="tracking-[0.2vw]">SARJATAULUKKO</p>
               </Link>
