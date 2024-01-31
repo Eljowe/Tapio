@@ -29,7 +29,7 @@ body {
   /*background-color: #85182A;*/
   /*background-color: #780116;*/
   background-color: black;
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 1;
 }
 ol,
@@ -76,7 +76,7 @@ img {
 }
 
 h1 {
-  font-family: 'dots';
+  font-family: 'Noto Serif Display', serif;
 }
 
 .scheduletable {
