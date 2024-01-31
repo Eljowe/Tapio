@@ -1,5 +1,6 @@
 import { BsInstagram, BsTiktok, BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-scroll';
+import joukkuekuva from '../src/assets/Team1.jpg';
 
 function App() {
   /*<img src={Team1} className='w-max sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] rounded-xl mt-10' alt='Team'></img>*/
@@ -35,9 +36,9 @@ function App() {
               </Link>
             </div>
             <img
-              src="/src/assets/Team1.jpg"
+              src={joukkuekuva}
               className="absolute top-0 h-[100%] w-full object-cover grayscale filter"
-              alt="kartta"
+              alt="joukkuekuva"
             />
             <div className="absolute inset-0 top-0 h-[100%] bg-gradient-to-b from-black to-transparent opacity-60"></div>
             <h1 className="z-10 px-0 text-5xl text-[#ffffff] sm:text-7xl md:text-8xl lg:text-9xl">TOTE/TAPIO</h1>
