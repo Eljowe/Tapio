@@ -1,6 +1,4 @@
 import { BsInstagram, BsTiktok, BsArrowRight } from 'react-icons/bs';
-import { slideAnimation } from './config/motion';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-scroll';
 
 function App() {
