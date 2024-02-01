@@ -10,12 +10,12 @@ interface Match {
   club_B_abbrevation: string;
   club_A_abbrevation: string;
   match_id: string;
+  time: string;
 }
 
 const data: Match[] = rawData.matches as Match[];
 
 function App() {
-  console.log(rawData);
   const upcoming_games: Array<Match> = data.filter((game: Match) => game.competition_id === 'etejp24');
 
   return (
