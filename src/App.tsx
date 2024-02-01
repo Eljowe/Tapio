@@ -1,9 +1,23 @@
 import { BsInstagram, BsTiktok, BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 import joukkuekuva from '../src/assets/Team1.jpg';
+import rawData from './spl_data/01_02.json';
+
+interface Match {
+  date: string;
+  status: string;
+  competition_id: string;
+  club_B_abbrevation: string;
+  club_A_abbrevation: string;
+  match_id: string;
+}
+
+const data: Match[] = rawData.matches as Match[];
 
 function App() {
-  /*<img src={Team1} className='w-max sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] rounded-xl mt-10' alt='Team'></img>*/
+  console.log(rawData);
+  const upcoming_games: Array<Match> = data.filter((game: Match) => game.competition_id === 'etejp24');
+
   return (
     <div className="flex w-full flex-col items-center justify-center text-white">
       <section id="koti" className="flex w-full flex-col items-center">
@@ -86,87 +100,17 @@ function App() {
       >
         <h3 className="m-auto w-[80vw] p-4 text-2xl tracking-[0.3rem]">Syyskauden ottelut</h3>
         <div className="m-auto flex w-[80vw] flex-col items-center justify-center divide-y divide-solid divide-black text-center sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
-          <a href="https://tulospalvelu.palloliitto.fi/match/2825150/lineups" target="_blank">
-            <div className="m-auto flex w-[80vw] flex-row items-center justify-between px-4 py-6 text-left lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
-              <p>HIFK/3</p>
-              <div className="flex flex-row items-center justify-center">
-                <p className="pr-2 text-right">Ti 1.8. 20:15</p>
-                <BsArrowRight />
+          {upcoming_games.map((match, index) => (
+            <a key={index} href={`https://tulospalvelu.palloliitto.fi/match/${match.match_id}/lineups`} target="_blank">
+              <div className="m-auto flex w-[80vw] flex-row items-center justify-between px-4 py-6 text-left lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
+                <p>{match.club_A_abbrevation != 'ToTe' ? match.club_A_abbrevation : match.club_B_abbrevation}</p>
+                <div className="flex flex-row items-center justify-center">
+                  <p className="pr-2 text-right">{match.date != '' ? match.date : '2024-xx-xx'}</p>
+                  <BsArrowRight />
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="https://tulospalvelu.palloliitto.fi/match/2825154/lineups" target="_blank">
-            <div className="m-auto flex w-[80vw] flex-row items-center justify-between px-4 py-6 text-left lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
-              <p>HePu</p>
-              <div className="flex flex-row items-center justify-center">
-                <p className="pr-2 text-right">Ti 8.8. 20:20</p>
-                <BsArrowRight />
-              </div>
-            </div>
-          </a>
-          <a href="https://tulospalvelu.palloliitto.fi/match/2825160/lineups" target="_blank">
-            <div className="m-auto flex w-[80vw] flex-row items-center justify-between px-4 py-6 text-left lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
-              <p>HJK/Kantsu</p>
-              <div className="flex flex-row items-center justify-center">
-                <p className="pr-2 text-right">Ke 16.8. 18:15</p>
-                <BsArrowRight />
-              </div>
-            </div>
-          </a>
-          <a href="https://tulospalvelu.palloliitto.fi/match/2825163/lineups" target="_blank">
-            <div className="m-auto flex w-[80vw] flex-row justify-between px-4 py-6 text-left lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
-              <p>PPJ/LeJa</p>
-              <div className="flex flex-row items-center justify-center">
-                <p className="pr-2 text-right">Ti 22.8. 20:15</p>
-                <BsArrowRight />
-              </div>
-            </div>
-          </a>
-          <a href="https://tulospalvelu.palloliitto.fi/match/2825170/lineups" target="_blank">
-            <div className="m-auto flex w-[80vw] flex-row items-center justify-between px-4 py-6 text-left lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
-              <p>FC POHU/KY United</p>
-              <div className="flex flex-row items-center justify-center">
-                <p className="pr-2 text-right">Ti 29.8. 20:20</p>
-                <BsArrowRight />
-              </div>
-            </div>
-          </a>
-          <a href="https://tulospalvelu.palloliitto.fi/match/2825170/lineups" target="_blank">
-            <div className="m-auto flex w-[80vw] flex-row items-center justify-between px-4 py-6 text-left lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
-              <p>PPV/Seos</p>
-              <div className="flex flex-row items-center justify-center">
-                <p className="pr-2 text-right">Ti 5.9. 19:15</p>
-                <BsArrowRight />
-              </div>
-            </div>
-          </a>
-          <a href="https://tulospalvelu.palloliitto.fi/match/2825175/lineups" target="_blank">
-            <div className="m-auto flex w-[80vw] flex-row items-center justify-between px-4 py-6 text-left lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
-              <p>FC Spital</p>
-              <div className="flex flex-row items-center justify-center">
-                <p className="pr-2 text-right">Ti 12.9. 20:20</p>
-                <BsArrowRight />
-              </div>
-            </div>
-          </a>
-          <a href="https://tulospalvelu.palloliitto.fi/match/2825181/lineups" target="_blank">
-            <div className="m-auto flex w-[80vw] flex-row items-center justify-between px-4 py-6 text-left lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
-              <p>Tavastia</p>
-              <div className="flex flex-row items-center justify-center">
-                <p className="pr-2 text-right">Ke 20.9. 20:15</p>
-                <BsArrowRight />
-              </div>
-            </div>
-          </a>
-          <a href="https://tulospalvelu.palloliitto.fi/match/2825190/lineups" target="_blank">
-            <div className="m-auto flex w-[80vw] flex-row items-center justify-between px-4 py-6 text-left lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
-              <p>SAPA/Savanna</p>
-              <div className="flex flex-row items-center justify-center">
-                <p className="pr-2 text-right">Pe 29.9. 18:00</p>
-                <BsArrowRight />
-              </div>
-            </div>
-          </a>
+            </a>
+          ))}
         </div>
       </section>
       <section
