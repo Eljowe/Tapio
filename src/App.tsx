@@ -8,8 +8,8 @@ function App() {
     <div className="flex w-full flex-col items-center justify-center text-white">
       <section id="koti" className="flex w-full flex-col items-center">
         <div className="flex w-full flex-col items-center justify-center bg-black p-14 shadow-xl  grayscale-0">
-          <div className="flex w-full flex-col items-center justify-center sm:h-[70dvh]">
-            <div className="divide fixed top-2 z-10 flex w-full flex-row items-center justify-center text-[0.6em] sm:text-base">
+          <div className="flex h-[70dvh] w-full flex-col items-center justify-center">
+            <div className="divide fixed top-2 z-10 flex w-full flex-row items-center justify-center text-[0.7em] sm:text-base">
               <Link
                 to="ottelut"
                 smooth={true}
@@ -47,7 +47,7 @@ function App() {
               src="https://www.toukolanteras.fi/wp-content/themes/wp-toukolan/images/logo.png"
               alt="logo"
             ></img>
-            <div className="fixed bottom-2 z-10 flex h-min flex-row items-center justify-end space-x-6 text-white sm:right-4 sm:top-2 sm:text-xl">
+            <div className="fixed bottom-2 z-10 flex h-min flex-row items-center justify-end space-x-6 text-white md:bottom-2 md:right-4 md:text-xl">
               <a
                 className=" transition duration-500 hover:scale-125"
                 href="https://www.instagram.com/totetapio/"

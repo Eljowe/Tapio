@@ -114,7 +114,7 @@ h1 {
   padding: 4px 0px;
 }
 .torneopal_widget .scoretable tr:nth-child(even) td {
-  background: #eee;
+  background: #f7dcdc;
 }
 .torneopal_widget #updated {
   display: none;
@@ -172,4 +172,8 @@ caption {
   margin-top: 5rem;
   font-family: 'Playfair Display', serif;
   font-size: larger;
+}
+
+tbody {
+  color: black;
 }
