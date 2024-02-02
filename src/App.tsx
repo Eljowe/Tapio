@@ -96,7 +96,7 @@ function App() {
       </section>
       <section
         id="ottelut"
-        className="mt-0 w-full flex-col items-center justify-center bg-white p-6 text-center text-black shadow-xl"
+        className="mt-0 w-full flex-col items-center justify-center bg-[#f3f3f3] p-6 text-center text-black shadow-xl"
       >
         <h3 className="m-auto w-[80vw] p-4 text-2xl tracking-[0.3rem]">Syyskauden ottelut</h3>
         <div className="m-auto flex w-[80vw] flex-col items-center justify-center divide-y divide-solid divide-black text-center sm:w-[80vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw]">
