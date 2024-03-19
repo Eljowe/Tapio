@@ -1,7 +1,7 @@
 import { BsInstagram, BsTiktok, BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 import joukkuekuva from '../src/assets/Team1.jpg';
-import rawData from './spl_data/01_02.json';
+import rawData from './spl_data/19_03.json';
 
 interface Match {
   date: string;
@@ -54,7 +54,7 @@ function App() {
               className="absolute top-0 h-[100%] w-full object-cover grayscale filter"
               alt="joukkuekuva"
             />
-            <div className="absolute inset-0 top-0 h-[100%] bg-gradient-to-b from-black to-transparent opacity-60"></div>
+            <div className="absolute inset-0 top-0 h-[100%] bg-black from-black to-transparent opacity-70"></div>
             <h1 className="z-10 px-0 text-5xl text-[#ffffff] sm:text-7xl md:text-8xl lg:text-9xl">TOTE/TAPIO</h1>
             <img
               className="z-10 mt-6 h-[10vh] w-max sm:mt-10"
